@@ -1,0 +1,355 @@
+<br />
+<b>Deprecated</b>:  Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead in <b>/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/config/database.php</b> on line <b>61</b><br />
+<br />
+<b>Deprecated</b>:  Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead in <b>/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/config/database.php</b> on line <b>81</b><br />
+{
+    "message": "SQLSTATE[HY000]: General error: 1 no such table: sessions (Connection: sqlite, SQL: delete from \"sessions\" where \"id\" = L7eaBQR7Pfdv2lGCfyCtxmFQqICU1KNAWj8L6nrM)",
+    "exception": "Illuminate\\Database\\QueryException",
+    "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Database/Connection.php",
+    "line": 825,
+    "trace": [
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Database/Connection.php",
+            "line": 779,
+            "function": "runQueryCallback",
+            "class": "Illuminate\\Database\\Connection",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Database/Connection.php",
+            "line": 584,
+            "function": "run",
+            "class": "Illuminate\\Database\\Connection",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Database/Connection.php",
+            "line": 548,
+            "function": "affectingStatement",
+            "class": "Illuminate\\Database\\Connection",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php",
+            "line": 4024,
+            "function": "delete",
+            "class": "Illuminate\\Database\\Connection",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Session/DatabaseSessionHandler.php",
+            "line": 269,
+            "function": "delete",
+            "class": "Illuminate\\Database\\Query\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Session/Store.php",
+            "line": 609,
+            "function": "destroy",
+            "class": "Illuminate\\Session\\DatabaseSessionHandler",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Auth/SessionGuard.php",
+            "line": 579,
+            "function": "migrate",
+            "class": "Illuminate\\Session\\Store",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Auth/SessionGuard.php",
+            "line": 550,
+            "function": "updateSession",
+            "class": "Illuminate\\Auth\\SessionGuard",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Auth/SessionGuard.php",
+            "line": 423,
+            "function": "login",
+            "class": "Illuminate\\Auth\\SessionGuard",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Support/Timebox.php",
+            "line": 34,
+            "function": "{closure:Illuminate\\Auth\\SessionGuard::attempt():412}",
+            "class": "Illuminate\\Auth\\SessionGuard",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Auth/SessionGuard.php",
+            "line": 412,
+            "function": "call",
+            "class": "Illuminate\\Support\\Timebox",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Auth/AuthManager.php",
+            "line": 340,
+            "function": "attempt",
+            "class": "Illuminate\\Auth\\SessionGuard",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php",
+            "line": 361,
+            "function": "__call",
+            "class": "Illuminate\\Auth\\AuthManager",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/app/Http/Controllers/Api/AuthController.php",
+            "line": 21,
+            "function": "__callStatic",
+            "class": "Illuminate\\Support\\Facades\\Facade",
+            "type": "::"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php",
+            "line": 47,
+            "function": "login",
+            "class": "App\\Http\\Controllers\\Api\\AuthController",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Routing/Route.php",
+            "line": 266,
+            "function": "dispatch",
+            "class": "Illuminate\\Routing\\ControllerDispatcher",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Routing/Route.php",
+            "line": 212,
+            "function": "runController",
+            "class": "Illuminate\\Routing\\Route",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+            "line": 808,
+            "function": "run",
+            "class": "Illuminate\\Routing\\Route",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+            "line": 170,
+            "function": "{closure:Illuminate\\Routing\\Router::runRouteWithinStack():807}",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php",
+            "line": 51,
+            "function": "{closure:Illuminate\\Pipeline\\Pipeline::prepareDestination():168}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+            "line": 209,
+            "function": "handle",
+            "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+            "line": 127,
+            "function": "{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+            "line": 807,
+            "function": "then",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+            "line": 786,
+            "function": "runRouteWithinStack",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+            "line": 750,
+            "function": "runRoute",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+            "line": 739,
+            "function": "dispatchToRoute",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php",
+            "line": 201,
+            "function": "dispatch",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+            "line": 170,
+            "function": "{closure:Illuminate\\Foundation\\Http\\Kernel::dispatchToRouter():198}",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php",
+            "line": 21,
+            "function": "{closure:Illuminate\\Pipeline\\Pipeline::prepareDestination():168}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php",
+            "line": 31,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+            "line": 209,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php",
+            "line": 21,
+            "function": "{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php",
+            "line": 51,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+            "line": 209,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TrimStrings",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php",
+            "line": 27,
+            "function": "{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+            "line": 209,
+            "function": "handle",
+            "class": "Illuminate\\Http\\Middleware\\ValidatePostSize",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php",
+            "line": 110,
+            "function": "{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+            "line": 209,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php",
+            "line": 62,
+            "function": "{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+            "line": 209,
+            "function": "handle",
+            "class": "Illuminate\\Http\\Middleware\\HandleCors",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php",
+            "line": 58,
+            "function": "{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+            "line": 209,
+            "function": "handle",
+            "class": "Illuminate\\Http\\Middleware\\TrustProxies",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php",
+            "line": 22,
+            "function": "{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+            "line": 209,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+            "line": 127,
+            "function": "{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php",
+            "line": 176,
+            "function": "then",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php",
+            "line": 145,
+            "function": "sendRequestThroughRouter",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/vendor/laravel/framework/src/Illuminate/Foundation/Application.php",
+            "line": 1220,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "/storage/emulated/0/Download/university-portal-backend  (2)/public/index.php",
+            "line": 15,
+            "function": "handleRequest",
+            "class": "Illuminate\\Foundation\\Application",
+            "type": "->"
+        }
+    ]
+}

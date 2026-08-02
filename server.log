@@ -1,0 +1,19 @@
+[Sun Aug  2 20:08:53 2026] PHP 8.5.1 Development Server (http://127.0.0.1:8001) started
+[Sun Aug  2 20:08:55 2026] 127.0.0.1:48460 Accepted
+[Sun Aug  2 20:09:04 2026] 127.0.0.1:48460 [200]: POST /api/auth/login
+[Sun Aug  2 20:09:04 2026] 127.0.0.1:48460 Closing
+[Sun Aug  2 20:10:06 2026] 127.0.0.1:48494 Accepted
+[Sun Aug  2 20:10:09 2026] 127.0.0.1:48494 [200]: POST /api/auth/login
+[Sun Aug  2 20:10:09 2026] 127.0.0.1:48494 Closing
+[Sun Aug  2 20:12:33 2026] 127.0.0.1:48584 Accepted
+[Sun Aug  2 20:12:37 2026] 127.0.0.1:48584 [200]: POST /api/auth/login
+[Sun Aug  2 20:12:37 2026] 127.0.0.1:48584 Closing
+[Sun Aug  2 20:14:53 2026] 127.0.0.1:48676 Accepted
+[Sun Aug  2 20:14:56 2026] 127.0.0.1:48676 [200]: POST /api/auth/login
+[Sun Aug  2 20:14:56 2026] 127.0.0.1:48676 Closing
+[Sun Aug  2 20:16:20 2026] 127.0.0.1:48714 Accepted
+[Sun Aug  2 20:16:23 2026] 127.0.0.1:48714 [200]: POST /api/auth/login
+[Sun Aug  2 20:16:23 2026] 127.0.0.1:48714 Closing
+[Sun Aug  2 20:18:57 2026] 127.0.0.1:48808 Accepted
+[Sun Aug  2 20:19:03 2026] 127.0.0.1:48808 [200]: POST /api/auth/login
+[Sun Aug  2 20:19:03 2026] 127.0.0.1:48808 Closing
