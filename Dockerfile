@@ -12,5 +12,6 @@ COPY . .
 RUN composer install --no-dev --optimize-autoloader
 RUN chown -R www-data:www-data storage bootstrap/cache && chmod -R 775 storage bootstrap/cache
 COPY nginx.conf /etc/nginx/sites-available/default
+RUN echo "clear_env = no" >> /usr/local/etc/php-fpm.d/www.conf
 EXPOSE 80
 CMD service nginx start && php-fpm
