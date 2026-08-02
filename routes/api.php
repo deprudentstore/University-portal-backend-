@@ -48,3 +48,18 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/books/{id}', [LibraryController::class, 'show']);
     Route::apiResource('messages', MessageController::class)->only(['index', 'store', 'show']);
 });
+Route::get('/debug-db', function () {
+    try {
+        \DB::connection()->getPdo();
+        return response()->json([
+            'status' => 'connected',
+            'database' => \DB::connection()->getDatabaseName(),
+        ]);
+    } catch (\Throwable $e) {
+        return response()->json([
+            'error' => $e->getMessage(),
+            'file' => $e->getFile(),
+            'line' => $e->getLine(),
+        ], 500);
+    }
+});
