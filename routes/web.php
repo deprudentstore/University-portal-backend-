@@ -11,6 +11,14 @@ Route::get('/clear-cache-xk92', function () {
 });
 
 Route::get('/run-migrations-xk92', function () {
-    Artisan::call('migrate', ['--force' => true]);
-    return Artisan::output();
+    try {
+        Artisan::call('migrate', ['--force' => true]);
+        return response()->json(['output' => Artisan::output()]);
+    } catch (\Throwable $e) {
+        return response()->json([
+            'error' => $e->getMessage(),
+            'file' => $e->getFile(),
+            'line' => $e->getLine(),
+        ], 500);
+    }
 });
