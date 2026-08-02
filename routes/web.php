@@ -9,3 +9,8 @@ Route::get('/clear-cache-xk92', function () {
     Artisan::call('route:clear');
     return 'Cache cleared successfully';
 });
+
+Route::get('/run-migrations-xk92', function () {
+    Artisan::call('migrate', ['--force' => true]);
+    return Artisan::output();
+});
